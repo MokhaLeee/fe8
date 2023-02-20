@@ -30,12 +30,10 @@ Please execute these commands one by one and not all at once so you can troubles
 
 ```sh
 # installing devkitARM
-wget https://github.com/devkitPro/pacman/releases/download/v1.0.2/devkitpro-pacman.amd64.deb
-sudo apt install gdebi-core
-sudo gdebi devkitpro-pacman.amd64.deb
-sudo dkp-pacman -S gba-dev
-source /etc/profile.d/devkit-env.sh
-rm devkitpro-pacman.amd64.deb
+wget https://apt.devkitpro.org/install-devkitpro-pacman
+chmod +x ./install-devkitpro-pacman
+sudo ./install-devkitpro-pacman
+rm -f install-devkitpro-pacman
 
 # getting the required packages
 sudo apt install build-essential git libpng-dev
